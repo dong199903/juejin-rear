@@ -6,6 +6,7 @@ const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const users = require('./routes/users')
 const shop = require('./routes/shop')
+const course = require('./routes/course')
 // error handler
 onerror(app)
 
@@ -24,7 +25,7 @@ app.use(views(__dirname + '/views', {
 // routes
 app.use(users.routes(), users.allowedMethods())
 app.use(shop.routes(), shop.allowedMethods())
-
+app.use(course.routes(), course.allowedMethods())
 // error-handling
 app.on('error', (err, ctx) => {
   console.error('server error', err, ctx)
