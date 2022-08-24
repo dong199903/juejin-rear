@@ -6,7 +6,7 @@ const courses = [
     desc:"理论+实战，带你深入浅出Java并发编程",
     name:"DannyIdea",
     info:"JAVA攻城狮 @ 珍爱网",
-    price:39.9,
+    price:199.9,
     count:12,
     view:517
   },
